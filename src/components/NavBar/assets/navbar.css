@@ -1,0 +1,15 @@
+.logo {
+    margin-left: 35px;
+  }
+  
+  .cart-container {
+    margin-right: 50px;
+  }
+  
+.gradient {
+    background: linear-gradient(to right, #000000, #C17D00);
+}
+
+.links {
+    margin-left: 80px;
+  }
