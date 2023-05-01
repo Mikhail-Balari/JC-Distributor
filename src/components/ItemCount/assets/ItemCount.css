@@ -1,0 +1,56 @@
+.Counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .Controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .Buttom {
+    background-color: #da7b23;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .Buttom:hover {
+    background-color: #000000;
+    color: #da7b23;
+  }
+  
+  .Number {
+    color: #000000;
+    font-size: 20px;
+    margin: 0;
+    margin-left: 12px;
+    margin-right: 12px;
+    text-align: center;
+  }
+  
+  .AddButtom {
+    background-color: #b89e0a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 4px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .AddButtom:hover {
+    background-color: #000000;
+    color: #da7b23;
+  }
+  
