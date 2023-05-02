@@ -44,10 +44,10 @@ const products = [
         id: '5',
         name: 'Rack de TV',
         price: 8500,
-        category: 'Comedor',
+        category: 'Varios',
         img: rack,
         stock: 15,
-        description: 'Rack para TV de madera con cajones y estantes.'
+        description: 'Rack para TV de madera con puertas y estantes.'
     }
 ]
 
