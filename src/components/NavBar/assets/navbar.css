@@ -11,5 +11,13 @@
 }
 
 .links {
-    margin-left: 80px;
+    margin-left: 120px;
   }
+
+.Option {
+  text-decoration: none;
+}
+
+.ActiveOption{
+  color: white;
+}

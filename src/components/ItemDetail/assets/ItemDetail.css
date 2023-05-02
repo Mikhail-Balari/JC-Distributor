@@ -1,0 +1,31 @@
+.CardItem {
+    max-width: 300px;
+    margin: 50px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,.6);
+    border-radius: 5px;
+    overflow: visible;
+    background-color: #dd7513;
+  }
+  
+  .CardItem img {
+    height: 100%;
+    width: 100%;
+    display: block;
+    object-fit: contain;
+  }
+  
+  .ItemFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-body {
+    height: 300px;
+  }
+  
+  .card-text {
+    margin-bottom: 10px;
+  }
+  
+  

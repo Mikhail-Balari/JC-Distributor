@@ -15,11 +15,11 @@ const NavBar = () => {
       </Link>
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav links">
-          <Link to={`/category/Comedor`} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>
+          <NavLink to={`/category/Comedor`} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>
             <li className="nav-item">
               <button className="btn nav-link text-white">Comedor</button>
             </li>
-          </Link>
+          </NavLink>
           <NavLink to={`/category/Living`} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>
           <li className="nav-item">
             <button className="btn nav-link text-white">Living</button>
