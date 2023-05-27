@@ -1,14 +1,17 @@
 import cart from './assets/cart1.svg'
 import styles from './assets/Cart.module.css'
+import { useContext } from 'react'
+import { CartContext } from '../../context/CartContext'
+import { Link } from 'react-router-dom'
 
 const CartWidget = () => {
+    const { totalQuantity } = useContext(CartContext)
+
     return (
-        <div className='d-flex'>
+        <Link to='/cart' className='CartWidget' style={{display: totalQuantity > 0 ? 'block' : 'none'}}>
             <img src={cart} alt="cart-widget" className={styles.Cart} />
-            <div className={styles.number}>
-                <span className="text-white">0</span>
-            </div>
-        </div>
+            { totalQuantity }
+        </Link>
     )
 }
 
