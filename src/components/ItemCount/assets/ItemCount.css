@@ -12,7 +12,7 @@
   }
   
   .Buttom {
-    background-color: #da7b23;
+    background-color: #000000;
     color: white;
     border: none;
     border-radius: 50%;
@@ -25,8 +25,8 @@
   }
   
   .Buttom:hover {
-    background-color: #000000;
-    color: #da7b23;
+    background-color: #ffffff;
+    color: #000000;
   }
   
   .Number {
@@ -40,7 +40,7 @@
   
   .AddButtom {
     background-color: #b89e0a;
-    color: white;
+    color: rgb(0, 0, 0);
     border: none;
     border-radius: 5px;
     font-size: 18px;
