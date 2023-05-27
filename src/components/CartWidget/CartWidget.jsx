@@ -12,7 +12,7 @@ const CartWidget = () => {
     return (
         <Link to='/cart' className='CartWidget' style={{ display: totalQuantity > 0 ? 'block' : 'none'}}>
             <img src={cartt} alt="cart-widget" className='Cart' />
-            { totalQuantity }
+            <span className="Number">{totalQuantity}</span>
         </Link>
     )
 }

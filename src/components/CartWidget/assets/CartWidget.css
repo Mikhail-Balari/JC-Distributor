@@ -1,8 +1,22 @@
-.Cart {
+.CartWidget {
+    position: relative;
+  }
+  
+  .CartWidget .Cart {
     width: 30px;
     height: 30px;
-}
-
-.number{
-    margin-right: 20px;
-}
+    margin-right: 40px;
+    margin-top: 5px;
+  }
+  
+  .CartWidget .Number {
+    position: absolute;
+    top: -20px; 
+    right: 28px; 
+    background-color: black; 
+    color: white; 
+    font-size: 12px; 
+    padding: 4px 8px; 
+    border-radius: 50%; 
+  }
+  
