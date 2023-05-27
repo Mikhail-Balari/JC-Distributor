@@ -1,0 +1,14 @@
+.cart-item-card {
+    height: 65px;
+    background-color: #000000;
+    color: white;
+  }
+
+  .card-body-cart{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin: 12px;
+  }
+  
+  
