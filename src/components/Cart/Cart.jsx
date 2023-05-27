@@ -6,7 +6,21 @@ import CartItem from '../CartItem/CartItem'
 
 
 const Cart = () => {
-    const { cart, clearCart, totalQuantity, total} = useContext(CartContext)
+    const { cart, clearCart } = useContext(CartContext);
+
+    const calculateTotal = () => {
+        let total = 0;
+        let totalQuantity = 0;
+
+        for (const item of cart) {
+        total += item.price * item.quantity;
+        totalQuantity += item.quantity;
+        }
+
+        return { total, totalQuantity };
+    };
+
+    const { total, totalQuantity } = calculateTotal();
 
     if(totalQuantity === 0) {
         return (
