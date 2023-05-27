@@ -1,15 +1,17 @@
-import cart from './assets/cart1.svg'
-import styles from './assets/Cart.module.css'
+import cartt from './assets/cart1.svg'
+import './assets/CartWidget.css'
 import { useContext } from 'react'
 import { CartContext } from '../../context/CartContext'
 import { Link } from 'react-router-dom'
 
 const CartWidget = () => {
-    const { totalQuantity } = useContext(CartContext)
+    const { cart } = useContext(CartContext); // Accedemos al estado del carrito
+    const totalQuantity = cart.reduce((total, item) => total + item.quantity, 0); // Calculamos la cantidad total de items en el carrito
+    
 
     return (
-        <Link to='/cart' className='CartWidget' style={{display: totalQuantity > 0 ? 'block' : 'none'}}>
-            <img src={cart} alt="cart-widget" className={styles.Cart} />
+        <Link to='/cart' className='CartWidget' style={{ display: totalQuantity > 0 ? 'block' : 'none'}}>
+            <img src={cartt} alt="cart-widget" className='Cart' />
             { totalQuantity }
         </Link>
     )
