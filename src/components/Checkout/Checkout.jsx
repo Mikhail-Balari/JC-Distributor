@@ -30,7 +30,7 @@ const Checkout = () => {
 
             const ids = cart.map(prod => prod.id)
 
-            const productsRef = collection(db, 'products')
+            const productsRef = collection(db, 'Products')
 
             const productsAddedFromFirestore = await getDocs(query(productsRef, where(documentId(), 'in', ids)))
 

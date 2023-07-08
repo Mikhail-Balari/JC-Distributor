@@ -1,4 +1,4 @@
-import mesa from "./components/Item/assets/img/mesa.webp"
+/*import mesa from "./components/Item/assets/img/mesa.webp"
 import silla from "./components/Item/assets/img/silla.jpg"
 import futon from "./components/Item/assets/img/futon.jpg"
 import cama from "./components/Item/assets/img/cama.jpg"
@@ -51,7 +51,7 @@ const products = [
     }
 ]
 
-export const getProducts = () => {
+/*export const getProducts = () => {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve(products)
@@ -74,4 +74,4 @@ export const getProductByCategory = (productCategory) => {
         }, 500)
     })
 }
-
+*/
