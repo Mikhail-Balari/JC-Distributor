@@ -20,7 +20,7 @@ const Checkout = () => {
                     name, phone, email
                 },
                 items: cart,
-                total: total,
+                total: total || 0,
                 date: Timestamp.fromDate(new Date())
             }
 
@@ -38,7 +38,7 @@ const Checkout = () => {
 
             docs.forEach(doc => {
                 const dataDoc = doc.data()
-                const stockDb = dataDoc.stockDb
+                const stockDb = dataDoc.stock
 
                 const productAddedToCart = cart.find(prod => prod.id === doc.id)
                 const prodQuantity = productAddedToCart?.quantity
@@ -56,6 +56,8 @@ const Checkout = () => {
                 const orderRef = collection(db, 'orders')
 
                 const orderAdded = await addDoc(orderRef, objOrder)
+
+                console.log(orderAdded.id) //ver si viene el orderID
 
                 setOrderId(orderAdded.id)
                 clearCart()
