@@ -1,5 +1,6 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# Distributor's sales app
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,9 +68,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
 ### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# ProyectoFinal-MikhailBalari
-Este es el Proyecto Final de React.JS
->>>>>>> db4900ca39e87ed85ab04340d86007134bab5e01
